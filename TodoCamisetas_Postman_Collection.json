@@ -1,0 +1,197 @@
+{
+  "info": {
+    "name": "TodoCamisetas API - Evaluaci\u00f3n Backend",
+    "_postman_id": "1d2e4efc-rcm-eva3",
+    "description": "Colecci\u00f3n de pruebas de la API en PHP puro para TodoCamisetas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Camisetas",
+      "item": [
+        {
+          "name": "GET /camisetas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/camisetas",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "camisetas"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST /camisetas",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Camiseta FC Test\",\n  \"club\": \"Test Club\",\n  \"pais\": \"Chile\",\n  \"tipo\": \"Local\",\n  \"color\": \"Rojo\",\n  \"precio\": 45000,\n  \"detalles\": \"Edici\\u00f3n especial 2024\",\n  \"codigo_producto\": \"CAM001\",\n  \"precio_oferta\": 42000\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8000/camisetas",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "camisetas"
+              ]
+            }
+          }
+        },
+        {
+          "name": "PUT /camisetas/1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"precio\": 39990\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8000/camisetas/1",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "camisetas",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "DELETE /camisetas/1",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/camisetas/1",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "camisetas",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Clientes",
+      "item": [
+        {
+          "name": "GET /clientes",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8000/clientes",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "clientes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST /clientes",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre_comercial\": \"Distribuidora RCM\",\n  \"rut\": \"12.345.678-9\",\n  \"direccion\": \"Av. Central 456\",\n  \"categoria\": \"Preferencial\",\n  \"contacto_nombre\": \"Pedro Vald\\u00e9s\",\n  \"contacto_email\": \"pedro@rcm.cl\",\n  \"porcentaje_oferta\": 15.0\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8000/clientes",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "clientes"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tallas",
+      "item": [
+        {
+          "name": "GET /tallas",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8000/tallas",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "tallas"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST /tallas",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"L\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8000/tallas",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "tallas"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
